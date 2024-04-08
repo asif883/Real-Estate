@@ -1,0 +1,122 @@
+
+[
+      {
+        "id": 1,
+        "estate_title": "Luxury Villa with Ocean View",
+        "segment_name": "Luxury Homes",
+        "description": "Experience luxury living in this stunning villa overlooking the ocean. Perfect for those seeking tranquility and elegance.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "5000 sqft",
+        "location": "Malibu, California",
+        "facilities": ["Swimming Pool", "Spa", "Gym", "Theater Room"],
+        "view_property": true,
+        "image": "https://i.ibb.co/WsCnCTp/images-2.jpg"
+      },
+      {
+        "id": 2,
+        "estate_title": "Modern Apartment in Downtown",
+        "segment_name": "Urban Living",
+        "description": "Live in the heart of the city with this sleek and contemporary apartment. Enjoy convenient access to shopping, dining, and entertainment.",
+        "price": "$3,000/month",
+        "status": "rent",
+        "area": "1000 sqft",
+        "location": "New York City, New York",
+        "facilities": ["Fitness Center", "Roof Deck", "Concierge Service"],
+        "view_property": false,
+        "image": "https://i.ibb.co/10M3gJ3/485861614.jpg"
+      },
+      {
+        "id": 3,
+        "estate_title": "Cozy Cottage in the Countryside",
+        "segment_name": "Rural Retreats",
+        "description": "Escape the hustle and bustle with this charming cottage nestled in picturesque countryside. Ideal for nature lovers and those seeking peace and quiet.",
+        "price": "$350,000",
+        "status": "sale",
+        "area": "1500 sqft",
+        "location": "Cotswolds, England",
+        "facilities": ["Garden", "Fireplace", "Wooden Deck"],
+        "view_property": true,
+        "image": "https://i.ibb.co/MNw8PqV/images-3.jpg"
+      },
+      {
+        "id": 4,
+        "estate_title": "Family Home with Mountain Views",
+        "segment_name": "Suburban Living",
+        "description": "Raise your family in this spacious home offering breathtaking views of the surrounding mountains. Close to schools, parks, and amenities.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2500 sqft",
+        "location": "Denver, Colorado",
+        "facilities": ["Backyard", "Study Room", "Garage"],
+        "view_property": true,
+        "image": "https://i.ibb.co/92cW4bT/0a6077ed.jpg"
+      },
+      {
+        "id": 5,
+        "estate_title": "Penthouse with City Skyline",
+        "segment_name": "Luxury Homes",
+        "description": "Live at the top with this luxurious penthouse offering panoramic views of the city skyline. Indulge in the finest amenities and upscale living.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "4000 sqft",
+        "location": "Los Angeles, California",
+        "facilities": ["Private Terrace", "Wine Cellar", "Concierge Service"],
+        "view_property": true,
+        "image": "https://i.ibb.co/KsYnN82/images-4.jpg"
+      },
+      {
+        "id": 6,
+        "estate_title": "Lakefront Retreat",
+        "segment_name": "Waterfront Properties",
+        "description": "Unwind in this tranquil lakefront retreat surrounded by nature's beauty. Perfect for fishing, boating, and enjoying the great outdoors.",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "3000 sqft",
+        "location": "Lake Tahoe, California",
+        "facilities": ["Dock", "Boathouse", "Outdoor Kitchen"],
+        "view_property": true,
+        "image": "lakefront_retreat.jpg"
+      },
+      {
+        "id": 7,
+        "estate_title": "Historic Townhouse",
+        "segment_name": "Heritage Homes",
+        "description": "Step back in time with this meticulously restored historic townhouse. Preserving the charm of yesteryears while offering modern comforts.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "2800 sqft",
+        "location": "Charleston, South Carolina",
+        "facilities": ["Courtyard", "Original Features", "Balcony"],
+        "view_property": true,
+        "image": "historic_townhouse.jpg"
+      },
+      {
+        "id": 8,
+        "estate_title": "Ski Chalet in the Mountains",
+        "segment_name": "Mountain Escapes",
+        "description": "Embrace the winter wonderland with this cozy ski chalet nestled in the mountains. Ski-in/ski-out access and stunning alpine views await.",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "2000 sqft",
+        "location": "Aspen, Colorado",
+        "facilities": ["Hot Tub", "Ski Locker", "Fire Pit"],
+        "view_property": true,
+        "image": "ski_chalet.jpg"
+      },
+      {
+        "id": 9,
+        "estate_title": "Gated Community Living",
+        "segment_name": "Exclusive Enclaves",
+        "description": "Experience privacy and security in this prestigious gated community. Enjoy resort-style amenities and a sense of exclusivity.",
+        "price": "$4,000,000",
+        "status": "sale",
+        "area": "6000 sqft",
+        "location": "Miami, Florida",
+        "facilities": ["Tennis Court", "Clubhouse", "24/7 Security"],
+        "view_property": true,
+        "image": "gated_community.jpg"
+      }  
+]
+  
+  

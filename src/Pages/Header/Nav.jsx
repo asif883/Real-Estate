@@ -14,11 +14,11 @@ const Nav = () => {
               <li><NavLink className='' to="/">Home</NavLink></li>
               <li><NavLink to="/feature">Feature</NavLink></li>
               <li><NavLink to="/facilities">Facilities</NavLink></li>
-              
               <li><NavLink to="/contact">Contact Us</NavLink></li>
+             <li><NavLink  to="/about">About</NavLink></li>
             </ul>
           </div>
-          <Link to='/' className="text-4xl text-purple-900 font-bold">A.S Estates</Link>
+          <Link to='/' className="font text-4xl text-purple-900 font-bold">Urban Paradise</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className=" menu-horizontal px-1 font-medium text-lg">
@@ -26,13 +26,14 @@ const Nav = () => {
             <li><NavLink className='mr-6 ' to="/properties">Properties</NavLink></li>
             <li><NavLink className='mr-6 ' to="/facilities">Facilities</NavLink></li>
             
-            <li><NavLink  to="/contact">Contact Us</NavLink></li>
+            <li><NavLink className='mr-6 ' to="/contact">Contact Us</NavLink></li>
+            <li><NavLink  to="/about">About</NavLink></li>
             
             
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to='/login' className="btn">Login</Link>
+          <Link to='/login'><button className="border-2 border-purple-600 px-6  rounded-lg py-3 text-purple-800 font-semibold">Login</button></Link>
         </div>
       </div>
     );

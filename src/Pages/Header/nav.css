@@ -4,3 +4,10 @@
     border: 2px solid purple;
     border-radius: 8px;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+.font {
+    font-family: "Galada", cursive;
+}
