@@ -1,9 +1,16 @@
 
 
+import Slider1 from "./Header/Slider1";
+
+
+
+
+
 const Home = () => {
     return (
         <div>
-            <h1 className="text-3xl">home</h1>
+            
+            <Slider1></Slider1>
         </div>
     );
 };

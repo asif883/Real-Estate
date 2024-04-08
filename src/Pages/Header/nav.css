@@ -1,0 +1,6 @@
+.active {
+    color: purple;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 8px;
+}
