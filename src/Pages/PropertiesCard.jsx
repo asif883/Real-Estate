@@ -1,21 +1,42 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'; 
+import { IoLocationSharp } from "react-icons/io5";
+import { IoBedOutline } from "react-icons/io5";
+import { FaShower } from "react-icons/fa";
+import { TbBoxPadding } from "react-icons/tb";
+
 
 
 const PropertiesCard = ({estate}) => {
 
-    const {id,estate_title,image,description}= estate;  
+    const {id,estate_title,image,location,price,facilities,bedrooms,bathrooms ,area}= estate;  
     return (
         
         <div>     
-       <Link to={`/properties/${id}`}>
-          <div className="card bg-base-100 shadow-xl">
+       <Link to={`/properties/${id}`} >
+          <div className="card  border-2 border-purple-200">
                 <figure><img className="h-[250px] w-[400px] rounded-t-lg" src={image} alt={estate_title} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{estate_title}</h2>
-                    <p>{description}</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    
+                    {/* <p>{description}</p> */}
+                    
+                    <div className="border-b-2 border-gray-200 pb-4 ">
+                        <h2 className="card-title mb-2">{estate_title}</h2>
+                        <p className="flex gap-2 items-center text-gray-500"><IoLocationSharp  /> {location}</p>
+                        <p className="text-xl font-semibold mb-1 mt-3">Facilities:</p>
+                        {
+                            facilities.map((facility,idx) => (<li className="text-gray-600 font-medium text-lg" key={idx}>{`${facility}`}</li>))
+                        }
+                        <div className="flex gap-2 justify-around mt-2">
+                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> < IoBedOutline className="" />Beds:{bedrooms}</p>
+                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <FaShower />Baths: {bathrooms}</p>
+                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <TbBoxPadding /> {area} </p>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between items-center mt-2 ">
+                        <p className="text-gray-600 text-xl font-semibold">Price: {price}</p>
+                        <button className="border-2 text-purple-800 font-medium hover:bg-purple-600 hover:text-white border-purple-600 px-4 py-2 rounded-lg">Details</button>
                     </div>
                 </div>
             </div>

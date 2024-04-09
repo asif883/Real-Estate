@@ -8,8 +8,10 @@
         "price": "$2,500,000",
         "status": "sale",
         "area": "5000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
         "location": "Malibu, California",
-        "facilities": ["Swimming Pool", "Spa", "Gym", "Theater Room"],
+        "facilities": ["Swimming Pool", "Spa & Gym", "Theater Room"],
         "view_property": true,
         "image": "https://i.ibb.co/WsCnCTp/images-2.jpg"
       },
@@ -20,6 +22,8 @@
         "description": "Live in the heart of the city with this sleek and contemporary apartment. Enjoy convenient access to shopping, dining, and entertainment.",
         "price": "$3,000/month",
         "status": "rent",
+        "bedrooms": 2,
+        "bathrooms": 2,
         "area": "1000 sqft",
         "location": "New York City, New York",
         "facilities": ["Fitness Center", "Roof Deck", "Concierge Service"],
@@ -34,6 +38,8 @@
         "price": "$350,000",
         "status": "sale",
         "area": "1500 sqft",
+        "bedrooms": 4,
+        "bathrooms": 4,
         "location": "Cotswolds, England",
         "facilities": ["Garden", "Fireplace", "Wooden Deck"],
         "view_property": true,
@@ -47,6 +53,8 @@
         "price": "$450,000",
         "status": "sale",
         "area": "2500 sqft",
+        "bedrooms": 2,
+        "bathrooms": 3,
         "location": "Denver, Colorado",
         "facilities": ["Backyard", "Study Room", "Garage"],
         "view_property": true,
@@ -60,6 +68,8 @@
         "price": "$5,000,000",
         "status": "sale",
         "area": "4000 sqft",
+        "bedrooms": 1,
+        "bathrooms": 2,
         "location": "Los Angeles, California",
         "facilities": ["Private Terrace", "Wine Cellar", "Concierge Service"],
         "view_property": true,
@@ -73,10 +83,12 @@
         "price": "$800,000",
         "status": "sale",
         "area": "3000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 3, 
         "location": "Lake Tahoe, California",
         "facilities": ["Dock", "Boathouse", "Outdoor Kitchen"],
         "view_property": true,
-        "image": "lakefront_retreat.jpg"
+        "image": "https://i.ibb.co/k5DwFCY/custom-lakefront-retreat.jpg"
       },
       {
         "id": 7,
@@ -86,10 +98,12 @@
         "price": "$1,200,000",
         "status": "sale",
         "area": "2800 sqft",
+        "bedrooms": 2,
+        "bathrooms": 1,
         "location": "Charleston, South Carolina",
         "facilities": ["Courtyard", "Original Features", "Balcony"],
         "view_property": true,
-        "image": "historic_townhouse.jpg"
+        "image": "https://i.ibb.co/jbM555D/TW-6420-1-HIGH-RES.webp"
       },
       {
         "id": 8,
@@ -99,10 +113,12 @@
         "price": "$600,000",
         "status": "sale",
         "area": "2000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
         "location": "Aspen, Colorado",
         "facilities": ["Hot Tub", "Ski Locker", "Fire Pit"],
         "view_property": true,
-        "image": "ski_chalet.jpg"
+        "image": "https://i.ibb.co/qRgQ3z2/senner-5-E087-DC0-35-D4-4-E0-A-B4-E19-A113954046-E.jpg"
       },
       {
         "id": 9,
@@ -112,10 +128,12 @@
         "price": "$4,000,000",
         "status": "sale",
         "area": "6000 sqft",
+        "bedrooms": 2,
+        "bathrooms": 1,
         "location": "Miami, Florida",
         "facilities": ["Tennis Court", "Clubhouse", "24/7 Security"],
         "view_property": true,
-        "image": "gated_community.jpg"
+        "image": "https://i.ibb.co/5xcc5hF/634878be4bbcbe270bf40a86-what-is-a-gated-community.png"
       }  
 ]
   
