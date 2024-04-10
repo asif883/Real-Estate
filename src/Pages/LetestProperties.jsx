@@ -11,7 +11,7 @@ const LetestProperties = () => {
         .then(res => res.json())
         .then (data => setEstatesInfo(data))
     },[])
-    console.log(estates);
+   
     return (
         <div className="max-w-7xl mx-auto mt-10">
             <div className="text-center">

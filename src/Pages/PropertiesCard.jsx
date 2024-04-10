@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { IoLocationSharp } from "react-icons/io5";
 import { IoBedOutline } from "react-icons/io5";
 import { FaShower } from "react-icons/fa";
-import { TbBoxPadding } from "react-icons/tb";
+import { BsArrowsFullscreen } from "react-icons/bs";
 
 
 
@@ -30,7 +30,7 @@ const PropertiesCard = ({estate}) => {
                         <div className="flex gap-2 justify-around mt-2">
                             <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> < IoBedOutline className="" />Beds:{bedrooms}</p>
                             <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <FaShower />Baths: {bathrooms}</p>
-                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <TbBoxPadding /> {area} </p>
+                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <BsArrowsFullscreen /> {area} </p>
                         </div>
                     </div>
 

@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Stunning Penthouse with Panoramic Views",
+      "status": "sale",
+      "image": "https://i.ibb.co/HPG6kt0/00590ed2-3576-48fc-9799-234cc38947b1.jpg",
+      "location": "California",
+      "author": "John Doe"
+    },
+    {
+      "title": "Luxurious Duplex Apartment with Private Terrace",
+      "status": "rent",
+      "image": "https://i.ibb.co/Wn08xpb/263644611.jpg",
+      "location": "Upper East Side",
+      "author": "Jane Smith"
+    },
+    {
+      "title": "Modern High-rise Condo with River Views",
+      "status": "sale",
+      "image": "https://i.ibb.co/ChDfF98/header-1.jpg",
+      "location": "Waterfront District",
+      "author": "Michael John"
+    },
+    {
+      "title": "Elegant Loft in Historic Building",
+      "status": "rent",
+      "image": "https://i.ibb.co/251sg4h/images-7.jpg",
+      "location": "Chic Arts District",
+      "author": "Sarah Lee"
+    },
+    {
+      "title": "Exclusive Mansion-style Apartment",
+      "status": "sale",
+      "image": "https://i.ibb.co/tbbPqXY/Moondance-apartment-block-facade-at-sunset.jpg",
+      "location": "Upscale Suburb",
+      "author": "David Brown"
+    }
+  ]
+  
