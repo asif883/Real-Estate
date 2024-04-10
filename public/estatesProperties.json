@@ -12,7 +12,8 @@
         "bathrooms": 2,
         "location": "Malibu, California",
         "facilities": ["Swimming Pool", "Spa & Gym", "Theater Room"],
-        "view_property": true,
+        "author_name": "John Smith",
+        "image_url": "https://i.ibb.co/MpLLnMX/i11.jpg",
         "image": "https://i.ibb.co/WsCnCTp/images-2.jpg"
       },
       {
@@ -27,7 +28,8 @@
         "area": "1000 sqft",
         "location": "New York City, New York",
         "facilities": ["Fitness Center", "Roof Deck", "Concierge Service"],
-        "view_property": false,
+        "author_name": "Emily Johnson",
+        "image_url": "https://i.ibb.co/0hp340Z/images-5.jpg",
         "image": "https://i.ibb.co/10M3gJ3/485861614.jpg"
       },
       {
@@ -42,7 +44,8 @@
         "bathrooms": 4,
         "location": "Cotswolds, England",
         "facilities": ["Garden", "Fireplace", "Wooden Deck"],
-        "view_property": true,
+        "author_name": "David Brown",
+        "image_url": "https://i.ibb.co/MpfHJj9/Jeffrey-Boakye-21-02171-1-600x622.webp",
         "image": "https://i.ibb.co/MNw8PqV/images-3.jpg"
       },
       {
@@ -57,7 +60,8 @@
         "bathrooms": 3,
         "location": "Denver, Colorado",
         "facilities": ["Backyard", "Study Room", "Garage"],
-        "view_property": true,
+        "author_name": "Sarah White",
+        "image_url": "https://i.ibb.co/5G5GrZ0/images-6.jpg",
         "image": "https://i.ibb.co/92cW4bT/0a6077ed.jpg"
       },
       {
@@ -72,7 +76,8 @@
         "bathrooms": 2,
         "location": "Los Angeles, California",
         "facilities": ["Private Terrace", "Wine Cellar", "Concierge Service"],
-        "view_property": true,
+        "author_name": "Michael Lee",
+        "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg",
         "image": "https://i.ibb.co/KsYnN82/images-4.jpg"
       },
       {
@@ -87,7 +92,8 @@
         "bathrooms": 3, 
         "location": "Lake Tahoe, California",
         "facilities": ["Dock", "Boathouse", "Outdoor Kitchen"],
-        "view_property": true,
+        "author_name": "Jessica Garcia",
+        "image_url": "https://i.ibb.co/5G5GrZ0/images-6.jpg",
         "image": "https://i.ibb.co/k5DwFCY/custom-lakefront-retreat.jpg"
       },
       {
@@ -102,7 +108,8 @@
         "bathrooms": 1,
         "location": "Charleston, South Carolina",
         "facilities": ["Courtyard", "Original Features", "Balcony"],
-        "view_property": true,
+        "author_name": "Christopher Martinez",
+       "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg",
         "image": "https://i.ibb.co/jbM555D/TW-6420-1-HIGH-RES.webp"
       },
       {
@@ -117,7 +124,8 @@
         "bathrooms": 2,
         "location": "Aspen, Colorado",
         "facilities": ["Hot Tub", "Ski Locker", "Fire Pit"],
-        "view_property": true,
+        "author_name": "Ashley Taylor",
+        "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg",
         "image": "https://i.ibb.co/qRgQ3z2/senner-5-E087-DC0-35-D4-4-E0-A-B4-E19-A113954046-E.jpg"
       },
       {
@@ -132,7 +140,8 @@
         "bathrooms": 1,
         "location": "Miami, Florida",
         "facilities": ["Tennis Court", "Clubhouse", "24/7 Security"],
-        "view_property": true,
+        "author_name": "Daniel Rodriguez",
+        "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg",
         "image": "https://i.ibb.co/5xcc5hF/634878be4bbcbe270bf40a86-what-is-a-gated-community.png"
       }  
 ]

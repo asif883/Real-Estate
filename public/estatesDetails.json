@@ -1,0 +1,204 @@
+[
+    {   
+        
+        "phone": "(123) 456-7890",
+         "email": "info@serenemeadows.com",
+        "id": 1,
+        "estate_title": "Luxury Villa with Ocean View",
+        "segment_name": "Luxury Homes",
+        "image": "https://i.ibb.co/WsCnCTp/images-2.jpg",
+        "publish_date": "2021-04-10",
+        "view": "1400",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "5000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "location": "Malibu, California",
+      "amenities": ["Community pool", "Tennis courts", "Walking trails", "Clubhouse"],
+      "description": "Welcome to Serene Meadows, where tranquility meets luxury. Nestled in the heart of Cityville, our residential estate offers a harmonious blend of modern living and natural beauty. Each home is meticulously designed to provide comfort and style, featuring spacious floor plans, elegant finishes, and scenic views of the surrounding landscape. Residents enjoy access to a variety of amenities, including a sparkling community pool, tennis courts, walking trails, and a clubhouse perfect for social gatherings. Whether you're seeking a peaceful retreat or an active lifestyle, Serene Meadows offers the perfect balance for your family's needs. Come experience the serenity and sophistication of Serene Meadows, where every day feels like a getaway.",
+      "author_name": "John Smith",
+        "image_url": "https://i.ibb.co/MpLLnMX/i11.jpg"
+      
+    },
+    {
+        "phone": "(456) 789-0123",
+        "email": "info@tranquilheights.com",
+     
+        "id": 2,
+        "estate_title": "Modern Apartment in Downtown",
+        "segment_name": "Urban Living",
+        "image": "https://i.ibb.co/10M3gJ3/485861614.jpg",
+        "publish_date": "2021-05-10",
+        "view": "1450",
+        "price": "$3,000/month",
+        "status": "rent",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1000 sqft",
+        "location": "New York City, New York",
+      "amenities": ["Fitness center", "Playground", "Dog park", "Picnic areas"],
+      "description": "Discover the epitome of peaceful living at Tranquil Heights. Situated in the charming community of Townville, our townhome development offers a serene escape from the hustle and bustle of city life. Each meticulously crafted townhome boasts modern designs and thoughtful layouts, providing residents with comfortable and convenient living spaces. Take advantage of our resort-style amenities, including a state-of-the-art fitness center, playground, dog park, and picturesque picnic areas perfect for outdoor gatherings. With its tranquil atmosphere and convenient location, Tranquil Heights is the ideal place to call home. Experience the serenity of Tranquil Heights and elevate your lifestyle today.",
+      "author_name": "Emily Johnson",
+        "image_url": "https://i.ibb.co/0hp340Z/images-5.jpg"
+     
+       
+    },
+    {
+        "phone": "(789) 012-3456",
+        "email": "info@harmonygrove.com",
+        "id": 3,
+        "estate_title": "Cozy Cottage in the Countryside",
+        "segment_name": "Rural Retreats", 
+      "property_name": "Harmony Grove",
+      "publish_date": "2023-04-10",
+        "view": "1700",
+      "image": "https://i.ibb.co/MNw8PqV/images-3.jpg",
+      "price": "$350,000",
+      "status": "sale",
+      "area": "1500 sqft",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "location": "Cotswolds, England",
+      "amenities": ["Swimming pool", "Fitness center", "Game room", "Outdoor BBQ area"],
+      "description": "Welcome to Harmony Grove, where modern living meets harmonious community. Nestled in the heart of Villagetown, our apartment complex offers a vibrant and dynamic lifestyle for residents of all ages. Our thoughtfully designed apartments feature contemporary finishes and open-concept layouts, providing the perfect backdrop for both relaxation and entertainment. Dive into luxury with our resort-style amenities, including a sparkling swimming pool, fully equipped fitness center, game room, and outdoor BBQ area ideal for gatherings with friends and family. Experience the harmony of urban convenience and suburban tranquility at Harmony Grove. Your perfect apartment home awaits.",
+      "author_name": "David Brown",
+        "image_url": "https://i.ibb.co/MpfHJj9/Jeffrey-Boakye-21-02171-1-600x622.webp"
+      
+      
+      
+    },
+    {
+        "id": 4,
+        "estate_title": "Family Home with Mountain Views",
+        "segment_name": "Suburban Living",
+        "image": "https://i.ibb.co/92cW4bT/0a6077ed.jpg",
+        "publish_date": "2022-05-10",
+        "view": "1800",
+        "price": "$450,000",
+        "status": "sale",
+        "phone": "(987) 654-3210",
+        "email": "info@peacefulpines.com",
+        "area": "2500 sqft",
+        "bedrooms": 2,
+        "bathrooms": 3,
+        "location": "Denver, Colorado",
+      "amenities": ["Community garden", "Nature trails", "Firepit lounge", "Basketball court"],
+      "description": "Escape to the tranquility of Peaceful Pines, where nature meets luxury living. Tucked away in the serene countryside, our cottage home community offers a peaceful retreat from the everyday hustle and bustle. Each charming cottage is designed with attention to detail and features cozy interiors, modern conveniences, and breathtaking views of the surrounding landscape. Embrace the great outdoors with our community garden, nature trails, firepit lounge, and basketball court, perfect for outdoor activities and relaxation. Discover the serenity of countryside living at Peaceful Pines, where every day feels like a retreat.",
+      "author_name": "Sarah White",
+      "image_url": "https://i.ibb.co/5G5GrZ0/images-6.jpg"
+     
+       
+     
+    },
+    {   
+        "phone": "(210) 987-6543",
+        "email": "info@tranquilitysprings.com",
+        "id": 5,
+        "estate_title": "Penthouse with City Skyline",
+        "segment_name": "Luxury Homes",
+        "image": "https://i.ibb.co/KsYnN82/images-4.jpg",
+        "publish_date": "2024-04-10",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "4000 sqft",
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "location": "Los Angeles, California",
+      "amenities": ["Community pool", "Gym", "Dog walking trail", "Picnic pavilion"],
+      "description": "Welcome to Tranquility Springs, where peace and convenience converge. Located in the heart of Suburbia, our condominium community offers a tranquil retreat from the hustle and bustle of city life. Each modern condominium is designed to maximize space and comfort, featuring sleek finishes and open layouts. Residents enjoy access to a variety of amenities, including a community pool, gym, dog walking trail, and picnic pavilion perfect for outdoor gatherings. Experience the ease of suburban living with the tranquility of nature at Tranquility Springs. Your urban oasis awaits.",
+      "author_name": "Michael Lee",
+      "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg"
+     
+       
+      
+    },
+    {
+        "phone": "(321) 654-9870",
+        "email": "info@meadowviewestates.com",
+        "id": 6,
+        "estate_title": "Lakefront Retreat",
+        "segment_name": "Waterfront Properties",
+        "image": "https://i.ibb.co/k5DwFCY/custom-lakefront-retreat.jpg",
+      "price_range": "$700,000 - $1,500,000",
+      "publish_date": "2021-04-10",
+        "view": "1400",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "3000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 3, 
+        "location": "Lake Tahoe, California",
+      "amenities": ["Private lake access", "Tennis courts", "Equestrian trails", "Gourmet kitchen"],
+      "description": "Indulge in luxury living at Meadowview Estates, where every detail is designed with sophistication and comfort in mind. Nestled in the picturesque countryside, our exclusive community offers an unparalleled lifestyle for the discerning homeowner. From expansive estates with private lake access to luxurious amenities such as tennis courts, equestrian trails, and gourmet kitchens, Meadowview Estates sets the standard for upscale living. Immerse yourself in the beauty of nature while enjoying the convenience of modern amenities. Discover the epitome of luxury living at Meadowview Estates.",
+      "author_name": "Jessica Garcia",
+        "image_url": "https://i.ibb.co/5G5GrZ0/images-6.jpg"
+      
+       
+     
+    },
+    {
+        "id": 7,
+        "estate_title": "Historic Townhouse",
+        "segment_name": "Heritage Homes",
+        "image": "https://i.ibb.co/jbM555D/TW-6420-1-HIGH-RES.webp",
+        "publish_date": "2021-04-10",
+        "view": "1400",
+        "phone": "(654) 321-7890",
+        "email": "info@tranquilterrace.com",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "2800 sqft",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "location": "Charleston, South Carolina",
+      "amenities": ["Fitness center", "Library", "Gardening area", "Walking paths"],
+      "description": "Embrace retirement living at its finest at Tranquil Terrace. Situated in the serene community of Serenityville, our senior living community offers a tranquil and supportive environment for residents to thrive. Our thoughtfully designed apartments provide comfort and convenience, while our resort-style amenities, including a fitness center, library, gardening area, and walking paths, cater to active and engaged lifestyles. Experience the peace of mind that comes with 24-hour care and support services, allowing you to focus on enjoying your retirement to the fullest. Discover the tranquility of senior living at Tranquil Terrace.",
+      "author_name": "Christopher Martinez",
+       "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg"
+   
+    },
+    {
+        "phone": "(789) 456-1230",
+        "email": "info@serenitysprings.com",
+        "id": 8,
+        "estate_title": "Ski Chalet in the Mountains",
+        "segment_name": "Mountain Escapes",
+        "publish_date": "2021-04-10",
+        "view": "1400",
+        "image": "https://i.ibb.co/qRgQ3z2/senner-5-E087-DC0-35-D4-4-E0-A-B4-E19-A113954046-E.jpg",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "2000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "location": "Aspen, Colorado",
+      "amenities": ["Private pool", "Hot tub", "Outdoor kitchen", "Game room"],
+      "description": "Escape to your own private oasis at Serenity Springs. Located in the peaceful town of Quietville, our vacation homes offer a serene retreat from the stresses of everyday life. Whether you're looking for a cozy cabin or a spacious villa, each of our homes is equipped with luxurious amenities, including a private pool, hot tub, outdoor kitchen, and game room, perfect for relaxation and entertainment. Experience the ultimate getaway with breathtaking views and unparalleled tranquility at Serenity Springs. Your dream vacation awaits.",
+      "author_name": "Ashley Taylor",
+        "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg"
+      
+    },
+    {
+        "phone": "(987) 654-3210",
+        "email": "info@tranquilitygardens.com",
+        "id": 9,
+        "estate_title": "Gated Community Living",
+        "segment_name": "Exclusive Enclaves",
+        "publish_date": "2022-04-19",
+        "view": "2400",
+        "image": "https://i.ibb.co/5xcc5hF/634878be4bbcbe270bf40a86-what-is-a-gated-community.png",
+        "price": "$4,000,000",
+        "status": "sale",
+        "area": "6000 sqft",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "location": "Miami, Florida",
+      "amenities": ["Community clubhouse", "Swimming pool", "Fitness center", "Tennis courts"],
+      "description": "Discover the epitome of luxury living at Tranquility Gardens, an exclusive gated community in the heart of Garden City. Each custom-designed home exudes elegance and sophistication, featuring spacious layouts, high-end finishes, and picturesque views of the surrounding gardens. Residents enjoy access to a wealth of amenities, including a community clubhouse, swimming pool, fitness center, and tennis courts, perfect for recreation and relaxation. Experience the tranquility of gated living with the convenience of urban amenities at Tranquility Gardens.",
+      "author_name": "Daniel Rodriguez",
+      "image_url": "https://i.ibb.co/gF5MLkT/entrepreneur-593358-1280.jpg"
+      
+    }
+  ]
+  

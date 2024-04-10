@@ -9,7 +9,7 @@ import { TbBoxPadding } from "react-icons/tb";
 
 const PropertiesCard = ({estate}) => {
 
-    const {id,estate_title,image,location,price,facilities,bedrooms,bathrooms ,area}= estate;  
+    const {id,estate_title,image,location,author_name,image_url ,facilities,bedrooms,bathrooms ,area}= estate;  
     return (
         
         <div>     
@@ -35,7 +35,10 @@ const PropertiesCard = ({estate}) => {
                     </div>
 
                     <div className="flex justify-between items-center mt-2 ">
-                        <p className="text-gray-600 text-xl font-semibold">Price: {price}</p>
+                        <div className="flex gap-2 items-center">
+                            <img className="w-7 h-8 rounded-full" src={image_url} alt="" />
+                            <p className="text-lg font-bold">{author_name}</p>
+                        </div>
                         <button className="border-2 text-purple-800 font-medium hover:bg-purple-600 hover:text-white border-purple-600 px-4 py-2 rounded-lg">Details</button>
                     </div>
                 </div>
