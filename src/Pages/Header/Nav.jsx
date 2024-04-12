@@ -21,10 +21,10 @@ const Nav = () => {
           <Link to='/' className="font text-4xl text-purple-900 font-bold">Urban Paradise</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className=" menu-horizontal px-1 font-medium text-lg">
+          <ul className=" menu-horizontal px-1 font-medium   text-lg">
             <li><NavLink className='mr-6 ' to="/">Home</NavLink></li>
             <li><NavLink className='mr-6 ' to="/properties">Properties</NavLink></li>
-            <li><NavLink className='mr-6 ' to="/facilities">Facilities</NavLink></li>
+            <li><NavLink className='mr-6 ' to="/blog">Blogs</NavLink></li>
             
             <li><NavLink className='mr-6 ' to="/contact">Contact Us</NavLink></li>
             <li><NavLink  to="/about">About</NavLink></li>
@@ -33,7 +33,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to='/login'><button className="border-2 border-purple-600 px-6  rounded-lg py-3 text-purple-800 font-semibold">Login</button></Link>
+          <Link to='/login'><button className="border-2 border-purple-600 px-6  rounded-lg py-3 hover:bg-purple-500 hover:text-white  text-purple-800 font-semibold">Login</button></Link>
         </div>
       </div>
     );

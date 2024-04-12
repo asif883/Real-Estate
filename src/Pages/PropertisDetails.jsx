@@ -12,6 +12,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
 
+
 const PropertisDetails = () => {
     const [latest, setLatest] = useState([]);
 
@@ -28,7 +29,7 @@ const PropertisDetails = () => {
     const idInt =parseInt(id);
     const oneEstate = estates.find((estate)=> estate.id === idInt);
     // console.log(oneEstate)
-    const {estate_title,image,publish_date,view,location,image_url,author_name,phone,email,price,status,bedrooms,bathrooms ,area,segment_name,amenities,description} =oneEstate;
+    const {facilities,estate_title,publish_date,view,location,image_url,author_name,phone,email,price,status,bedrooms,bathrooms ,area,segment_name,amenities,description,image1,image2,image3} =oneEstate;
     return (
         <div className="max-w-7xl mx-auto ">
             <Nav></Nav>
@@ -41,7 +42,7 @@ const PropertisDetails = () => {
                      <p className="text-2xl font-bold">For {status}</p>
                    </div> 
                   </div>
-                  <div className="flex gap-2 text-gray-500 font-medium mt-2">
+                  <div className="flex gap-2 text-gray-500 font-medium ">
                     <p className="flex gap-1 items-center"><IoLocationSharp /> {location}</p>
                     <p>/</p>
                     <p className="flex gap-1 items-center"><IoIosTimer /> {publish_date}</p>
@@ -52,7 +53,30 @@ const PropertisDetails = () => {
                  
                 <div className="grid gap-6 grid-cols-3 mt-6">
                     <div className="col-span-2 ">
-                        <img className="w-full rounded-lg" src={image} alt="" />
+                      <div className="carousel w-full rounded-lg h-[550px]">
+                        <div id="slide1" className="carousel-item relative w-full">
+                            <img src={image1} className="w-full" />
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a> 
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                            </div>
+                        </div> 
+                        <div id="slide2" className="carousel-item relative w-full">
+                            <img src={image2} className="w-full" />
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a> 
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                            </div>
+                        </div> 
+                        <div id="slide3" className="carousel-item relative w-full">
+                            <img src={image3} className="w-full" />
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a> 
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                            </div>
+                        </div> 
+                       
+                </div>
 
                                           
                      </div>
@@ -111,11 +135,19 @@ const PropertisDetails = () => {
                                         <p className="font-semibold flex items-center gap-1 text-lg border-2 p-2 border-purple-200 rounded-lg"> <BsArrowsFullscreen /> {area} </p>
                                         <p className="font-semibold flex items-center gap-1 text-lg border-2 p-2 border-purple-200 rounded-lg"> <IoHomeOutline /> {segment_name} </p>
                                 </div>
-                                <div className="mt-4 border-b-2 pb-4">
-                                    <h1 className="text-xl font-bold mb-2">Amenities:</h1>
+                                <div className="mt-4 border-b-2 pb-4  flex justify-between">
+                                   <div>
+                                   <h1 className="text-xl font-bold underline  mb-2">Amenities:</h1>
                                     {
                                         amenities.map((amenitie,idx)=> (<li key={idx}>{`${amenitie}`}</li>))
                                     }
+                                   </div>
+                                    <div >
+                                    <p className="text-xl font-bold mb-2 underline">Facilities:</p>
+                                        {
+                                            facilities.map((facility,idx) => (<li className="text-gray-600  font-medium text-lg" key={idx}>{`${facility}`}</li>))
+                                        }
+                                    </div>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold mt-4 mb-2">About This Listing</h1>
@@ -146,6 +178,7 @@ const PropertisDetails = () => {
                 </div>
                
             </div>
+          
         </div>
     );
 };

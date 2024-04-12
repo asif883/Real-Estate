@@ -14,35 +14,29 @@ const PropertiesCard = ({estate}) => {
         
         <div>     
        <Link to={`/properties/${id}`} >
-          <div className="card  border-2 border-purple-200">
-                <figure><img className="h-[250px] w-[400px] rounded-t-lg" src={image} alt={estate_title} /></figure>
-                <div className="card-body">
-                    
-                    {/* <p>{description}</p> */}
-                    
-                    <div className="border-b-2 border-gray-200 pb-4 ">
-                        <h2 className="card-title mb-2">{estate_title}</h2>
-                        <p className="flex gap-2 items-center text-gray-500"><IoLocationSharp  /> {location}</p>
-                        <p className="text-xl font-semibold mb-1 mt-3">Facilities:</p>
-                        {
-                            facilities.map((facility,idx) => (<li className="text-gray-600 font-medium text-lg" key={idx}>{`${facility}`}</li>))
-                        }
-                        <div className="flex gap-2 justify-around mt-2">
-                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> < IoBedOutline className="" />Beds:{bedrooms}</p>
-                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <FaShower />Baths: {bathrooms}</p>
-                            <p className="flex items-center gap-1 text-lg bg-purple-100 p-2 rounded-3xl"> <BsArrowsFullscreen /> {area} </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-between items-center mt-2 ">
-                        <div className="flex gap-2 items-center">
-                            <img className="w-7 h-8 rounded-full" src={image_url} alt="" />
-                            <p className="text-lg font-bold">{author_name}</p>
-                        </div>
-                        <button className="border-2 text-purple-800 font-medium hover:bg-purple-600 hover:text-white border-purple-600 px-4 py-2 rounded-lg">Details</button>
-                    </div>
-                </div>
+           <div className="flex gap-3 border border-purple-200 rounded-lg p-3"> 
+            <div>
+                <img className="w-[250px] h-[160px] rounded-lg" src={image} alt={estate_title} />
             </div>
+            <div>
+                 <h1 className="text-xl font-bold">{estate_title}</h1>
+                 <p className="flex items-center gap-1 text-gray-500"><IoLocationSharp></IoLocationSharp>{location}</p> 
+                 <div className="flex gap-2  mt-2 border-b border-purple-300 pb-3">
+                            <p className="flex items-center gap-1 text-lg p-2 rounded-3xl"> < IoBedOutline className="text-purple-600 text-xl" />Beds:{bedrooms}</p>
+                            <p className="flex items-center gap-1 text-lg p-2 rounded-3xl"> <FaShower className="text-purple-600 text-xl" />Baths: {bathrooms}</p>
+                            <p className="flex items-center gap-1 text-lg  p-2 rounded-3xl"> <BsArrowsFullscreen className="text-purple-600 text-xl"/> {area} </p>
+                 </div> 
+                 <div className="mt-3 flex justify-between">
+                    <div className="flex gap-1 items-center">
+                        <img className="w-8 h-8 rounded-full" src={image_url} alt="" />
+                        <p>{author_name}</p>
+                    </div>
+                    <div>
+                        <button className="border text-purple-800 font-medium  hover:bg-purple-600 hover:text-white border-purple-600 px-2 py-1 rounded-lg">Details</button>
+                    </div>
+                 </div>
+            </div>
+           </div>
         </Link>
         </div>
 
