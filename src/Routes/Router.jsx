@@ -4,6 +4,8 @@ import Home from "../Pages/Home";
 import Facilities from "../Pages/Facilities";
 import PropertisDetails from "../Pages/PropertisDetails";
 import Properties from "../Pages/Properties";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 const Router = createBrowserRouter ([
     {
@@ -27,6 +29,14 @@ const Router = createBrowserRouter ([
             path :'/properties',
             element:<Properties></Properties>
             
+        },
+        {
+            path:'/login',
+            element:<Login></Login>
+        },
+        {
+            path: '/register',
+            element: <Register></Register>
         }
        ]
     }

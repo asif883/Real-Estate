@@ -9,7 +9,7 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 
 const PropertiesCard = ({estate}) => {
 
-    const {id,estate_title,image,location,author_name,image_url ,facilities,bedrooms,bathrooms ,area}= estate;  
+    const {id,estate_title,image,location,author_name,image_url ,bedrooms,bathrooms ,area}= estate;  
     return (
         
         <div>     
@@ -23,8 +23,8 @@ const PropertiesCard = ({estate}) => {
                  <p className="flex items-center gap-1 text-gray-500"><IoLocationSharp></IoLocationSharp>{location}</p> 
                  <div className="flex gap-2  mt-2 border-b border-purple-300 pb-3">
                             <p className="flex items-center gap-1 text-lg p-2 rounded-3xl"> < IoBedOutline className="text-purple-600 text-xl" />Beds:{bedrooms}</p>
-                            <p className="flex items-center gap-1 text-lg p-2 rounded-3xl"> <FaShower className="text-purple-600 text-xl" />Baths: {bathrooms}</p>
-                            <p className="flex items-center gap-1 text-lg  p-2 rounded-3xl"> <BsArrowsFullscreen className="text-purple-600 text-xl"/> {area} </p>
+                            <p className="flex items-center  text-lg p-2 rounded-3xl"> <FaShower className="text-purple-600 text-xl" />Baths: {bathrooms}</p>
+                            <p className="flex items-center text-lg  p-2 rounded-3xl"> <BsArrowsFullscreen className="text-purple-600 text-xl"/> {area} </p>
                  </div> 
                  <div className="mt-3 flex justify-between">
                     <div className="flex gap-1 items-center">
