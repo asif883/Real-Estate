@@ -1,8 +1,20 @@
 import {  Link, NavLink } from "react-router-dom";
 import "./nav.css";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/Provider";
 
 
 const Nav = () => {
+ 
+  const {user,logOut} = useContext(AuthContext)
+  const handleSingOut = ()=>{
+
+       logOut()
+        .then()
+        .catch()
+
+  }
+
     return (
         <div className="navbar max-w-7xl mx-auto mt-5 ">
         <div className="navbar-start">
@@ -33,8 +45,16 @@ const Nav = () => {
           </ul>
         </div>
         <div className="navbar-end">
+         {
+          user ?  <img className="w-16 h-16 rounded-full" src='https://i.ibb.co/YRM9Cdz/360-F-229758328-7x8jw-Cwjt-BMm-C6rg-Fz-LFh-Zo-Ep-Lob-B6-L8.jpg' alt={user.email} />
+          :
           <Link to='/register'><button className="border-2 mr-4 border-purple-600 px-4  rounded-lg py-3 hover:bg-purple-500 hover:text-white  text-purple-800 font-semibold">Register</button></Link>
-          <Link to='/login'><button className="border-2 border-purple-600 px-4  rounded-lg py-3 hover:bg-purple-500 hover:text-white  text-purple-800 font-semibold">Login</button></Link>
+         }
+         {
+           user ? <Link ><button onClick={handleSingOut} className="border-2 border-purple-600 px-4  rounded-lg py-3 hover:bg-purple-500 hover:text-white  text-purple-800 font-semibold">Sing Out</button></Link>
+           :
+           <Link to='/login'><button className="border-2 border-purple-600 px-4  rounded-lg py-3 hover:bg-purple-500 hover:text-white  text-purple-800 font-semibold">Login</button></Link>
+         }
         </div>
       </div>
     );

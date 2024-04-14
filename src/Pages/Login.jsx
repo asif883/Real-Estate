@@ -3,28 +3,50 @@ import Nav from "./Header/Nav";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/Provider";
 
 
 const Login = () => {
-    return (
+    const {login} = useContext(AuthContext)
+      
+     const handleLogin = e=>{
+        e.preventDefault();
+        const form = new FormData (e.currentTarget)
+        const email = form.get('email');
+        const password = form.get('password');
+        
+
+
+        login(email,password)
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch (error =>{
+            console.error( error)
+        })
+
+     }
+     
+     return (
         <div>
             <Nav></Nav>
             <div className="max-w-md mx-auto mt-10 shadow-xl rounded-lg">
                 <div className="text-center">
                     <h1 className="text-4xl text-purple-800 font-bold">Login Now</h1>
                 </div>
-            <form className="card-body">
+            <form onSubmit={handleLogin} className="card-body">
                     <div className="form-control">
                     <label className="label">
                         <span className="label-text text-xl font-semibold">Email</span>
                     </label>
-                    <input type="email" placeholder="email" className="input input-bordered border border-purple-600" required />
+                    <input type="email" name="email" placeholder="email" className="input input-bordered border border-purple-600" required />
                     </div>
                     <div className="form-control">
                     <label className="label">
                         <span className="label-text text-xl font-semibold">Password</span>
                     </label>
-                    <input type="password" placeholder="password" className="input input-bordered border border-purple-600" required />
+                    <input type="password" name="password" placeholder="password" className="input input-bordered border border-purple-600" required />
                    
                     </div>
                    

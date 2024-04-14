@@ -1,8 +1,34 @@
 import { Link } from "react-router-dom";
 import Nav from "./Header/Nav";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/Provider";
+
+
+
 
 
 const Register = () => {
+    const {createUser} =useContext(AuthContext)
+
+    const handleRegister = e=> {
+        e.preventDefault();
+        const form = new FormData (e.currentTarget)
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log (email, password);
+
+
+        createUser ( email, password)
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch (error =>{
+            console.error( error)
+        })
+    }
+
+
+
     return (
         <div>
             <Nav></Nav>
@@ -10,7 +36,7 @@ const Register = () => {
                 <h1 className="text-4xl text-purple-800 font-bold">Register Now</h1>
 
 
-                <form className="card-body">
+                <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-xl font-semibold">Name</span>
@@ -27,13 +53,13 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text text-xl font-semibold">Email</span>
                             </label>
-                            <input type="email" placeholder="email" className="input input-bordered border border-purple-600" required />
+                            <input type="email" name='email' placeholder="email" className="input input-bordered border border-purple-600" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text text-xl font-semibold">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered border border-purple-600" required />
+                        <input type="password" name='password' placeholder="password" className="input input-bordered border border-purple-600" required />
                        
                         </div>
                         <div className="form-control mt-6">
