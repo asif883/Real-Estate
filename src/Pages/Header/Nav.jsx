@@ -35,7 +35,7 @@ const Nav = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className=" menu-horizontal px-1 font-medium   text-lg">
             <li><NavLink className='mr-6 ' to="/">Home</NavLink></li>
-            <li><NavLink className='mr-6 ' to="/properties">Properties</NavLink></li>
+            <li><NavLink className='mr-6 ' to="/properties">Property</NavLink></li>
             <li><NavLink className='mr-6 ' to="/blog">Blogs</NavLink></li>
             
             <li><NavLink className='mr-6 ' to="/contact">Contact Us</NavLink></li>
