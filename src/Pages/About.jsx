@@ -8,7 +8,7 @@ const About = () => {
         <div>
             <Nav></Nav>
             <div className=" bg-purple-50 p-4">
-          <div className="flex gap-10 mt-10 max-w-7xl mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row gap-10 mt-10 max-w-7xl mx-auto">
                 <div className="flex-1">
                     <img className="rounded-lg" src="https://i.ibb.co/YLkVKtm/maxresdefault.jpg" alt="" />
                 </div>

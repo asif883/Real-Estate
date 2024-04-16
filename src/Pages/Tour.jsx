@@ -5,7 +5,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 const Tour = () => {
     return (
         <div className="max-w-7xl mx-auto mt-16">
-            <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
             <div>
                 <li className="text-xl font-semibold text-purple-800 uppercase mb-2">Let's take a tour</li>
                  <h1 className="text-4xl font-bold">Helping People to Find <br /> The

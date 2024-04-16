@@ -45,7 +45,7 @@ const Slider1 = () => {
               </div>
             <div className='absolute top-1/3 left-16'>
                 
-                <h1 className='text-7xl font-bold text-white'>Find the Perfect To Live <br /> With Your Family</h1>
+                <h1 className='text-2xl md:text-4xl lg:text-7xl font-bold text-white'>Find the Perfect To Live <br /> With Your Family</h1>
                 <label className="input mt-8 py-8 input-bordered flex items-center gap-2">
                     <input type="text" className="grow" placeholder="Search For a Property" />
                     <button className="px-4 py-3 border-2 rounded-lg border-purple-400 text-purple-800 font-semibold">Go & Search</button>

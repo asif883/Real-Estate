@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import Nav from "./Header/Nav";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/Provider";
-
+import { IoIosEyeOff,IoMdEye  } from "react-icons/io";
 
 
 
 
 const Register = () => {
     const {createUser} =useContext(AuthContext)
+    const [errorMassage, setErrorMassage] =useState('')
+    const [success,setSuccess] =useState('')
+    const [showPassword, setShowPassword] =useState(false)
 
     const handleRegister = e=> {
         e.preventDefault();
@@ -17,13 +20,19 @@ const Register = () => {
         const password = form.get('password');
         console.log (email, password);
 
+        setErrorMassage('');
+        setSuccess('')
+
+        
 
         createUser ( email, password)
         .then(result =>{
             console.log(result.user)
+            setSuccess('Registration success')
         })
         .catch (error =>{
-            console.error( error)
+            console.error( error.message)
+            setErrorMassage(error.message)
         })
     }
 
@@ -32,7 +41,8 @@ const Register = () => {
     return (
         <div>
             <Nav></Nav>
-            <div className="text-center max-w-lg mx-auto mt-8 shadow-xl rounded-lg">
+            
+            <div className="text-center max-w-lg mx-auto mt-8 shadow-xl rounded-lg pb-8">
                 <h1 className="text-4xl text-purple-800 font-bold">Register Now</h1>
 
 
@@ -57,11 +67,21 @@ const Register = () => {
                             </label>
                             <input type="email" name='email' placeholder="email" className="input input-bordered border border-purple-600" required />
                         </div>
-                        <div className="form-control">
+                        <div className="form-control relative">
                         <label className="label">
-                            <span className="label-text text-xl font-semibold">Password</span>
+                            <span className=" label-text text-xl font-semibold">Password</span>
                         </label>
-                        <input type="password" name='password' placeholder="password" className="input input-bordered border border-purple-600" required />
+                      
+                       <input type={showPassword? "text": "password"} 
+                            name='password' 
+                            placeholder="password" 
+                            className= "input input-bordered border border-purple-600" required />
+                      
+                            <span  className="absolute right-3 bottom-4 text-xl" onClick={()=>setShowPassword(!showPassword)}>
+                                {
+                                    showPassword ? <IoIosEyeOff></IoIosEyeOff> : <IoMdEye></IoMdEye>
+                                }
+                            </span>
                        
                         </div>
                         <div className="form-control mt-6">
@@ -71,6 +91,12 @@ const Register = () => {
                             <a className="label-text-alt text-lg">Already have an account? Please <Link to='/login' className="underline text-purple-600">Login</Link></a>
                         </label>
                  </form>
+                 {
+                    errorMassage && <p className="text-red-600">{errorMassage}</p>
+                 }
+                 {
+                    success && <p className="text-xl text-green-700">{success}</p>
+                 }
             </div>
             
         </div>

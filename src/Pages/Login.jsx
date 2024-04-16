@@ -8,7 +8,8 @@ import { AuthContext } from "../Provider/Provider";
 
 
 const Login = () => {
-    const {login} = useContext(AuthContext)
+    const {login,singINGoogle} = useContext(AuthContext)
+    
       
      const handleLogin = e=>{
         e.preventDefault();
@@ -26,6 +27,15 @@ const Login = () => {
             console.error( error)
         })
 
+     }
+     const handleGoogleSingIn = ()=>{
+        singINGoogle()
+        .then(result => {
+            console.log(result.user)
+        })
+        .catch(error => {
+            console.log(error)
+        })
      }
      
      return (
@@ -53,14 +63,15 @@ const Login = () => {
                     <div className="form-control mt-6">
                     <button className="border-2 border-purple-600 px-6  rounded-lg py-3 bg-purple-500 text-white  font-semibold">Login</button>
                     </div>
-                    <div className="mt-3">
-                    <div className="mt-4">
-                    <div className="border-b-2 border-gray-400 absolute w-96  transform -translate-y-1/2"></div>
                     
-                    <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 rounded-full">Or ,Login with</div>
-                    </div>
-                        <div className="text-center mt-10">
-                            <button className="mr-3 border border-purple-400 p-1 rounded-xl">
+                    <label className="label">
+                        <p className="label-text-alt text-lg ">New here? Please <Link to='/register' className="underline text-purple-600 font-medium">Register</Link></p>
+                    </label>
+            </form>
+            <div className="">
+                    
+                        <div className="text-center mt-6 pb-8">
+                            <button onClick={handleGoogleSingIn} className="mr-3 border border-purple-400 p-1 rounded-xl">
                                 <FcGoogle className="w-10 h-10" />
                             </button>
                             <button  className="mr-3 border border-purple-400 p-1 rounded-xl">
@@ -71,10 +82,6 @@ const Login = () => {
                             </button>
                         </div>
                     </div>
-                    <label className="label">
-                        <a className="label-text-alt text-lg ">New here? Please <Link to='/register' className="underline text-purple-600 font-medium">Register</Link></a>
-                    </label>
-            </form>
             </div>
         </div>
     );

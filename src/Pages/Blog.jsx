@@ -20,7 +20,7 @@ const Blog = () => {
             <Nav></Nav>
             <div className="max-w-7xl mx-auto mt-10">
             {
-                blogs.map((blog, idx)=> <div className="mt-12" key={idx}>
+                blogs.map((blog, idx)=> <div className="mt-12 pb-3 border-purple-300 border-b-2 border-dashed" key={idx}>
                   <div>
                     <h1 className="text-3xl font-bold">{blog.title}</h1>
                     <div className="flex gap-5">

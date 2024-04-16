@@ -24,13 +24,13 @@ const Nav = () => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><NavLink className='' to="/">Home</NavLink></li>
-              <li><NavLink to="/feature">Feature</NavLink></li>
-              <li><NavLink to="/facilities">Facilities</NavLink></li>
+              <li><NavLink to="/feature">Property</NavLink></li>
+              <li><NavLink to="/facilities">Blog</NavLink></li>
               <li><NavLink to="/contact">Contact Us</NavLink></li>
              <li><NavLink  to="/about">About</NavLink></li>
             </ul>
           </div>
-          <Link to='/' className="font text-4xl text-purple-900 font-bold">Urban Paradise</Link>
+          <Link to='/' className="font text-xl lg:text-4xl text-purple-900 font-bold">Urban Paradise</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className=" menu-horizontal px-1 font-medium   text-lg">

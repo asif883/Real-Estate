@@ -16,12 +16,12 @@ const PropertiesCard = ({estate}) => {
        <Link to={`/properties/${id}`} >
            <div className="flex gap-3 border border-purple-200 rounded-lg p-3"> 
             <div>
-                <img className="w-[250px] h-[160px] rounded-lg" src={image} alt={estate_title} />
+                <img className="w-[100px] lg:w-[250px] h-[100px] lg:h-[160px] rounded-lg" src={image} alt={estate_title} />
             </div>
             <div>
                  <h1 className="text-xl font-bold">{estate_title}</h1>
                  <p className="flex items-center gap-1 text-gray-500"><IoLocationSharp></IoLocationSharp>{location}</p> 
-                 <div className="flex gap-2  mt-2 border-b border-purple-300 pb-3">
+                 <div className="flex gap-2 flex-col lg:flex-row  mt-2 border-b border-purple-300 pb-3">
                             <p className="flex items-center gap-1 text-lg p-2 rounded-3xl"> < IoBedOutline className="text-purple-600 text-xl" />Beds:{bedrooms}</p>
                             <p className="flex items-center  text-lg p-2 rounded-3xl"> <FaShower className="text-purple-600 text-xl" />Baths: {bathrooms}</p>
                             <p className="flex items-center text-lg  p-2 rounded-3xl"> <BsArrowsFullscreen className="text-purple-600 text-xl"/> {area} </p>
