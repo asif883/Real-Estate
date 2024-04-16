@@ -1,13 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Pages/Home";
-import Facilities from "../Pages/Facilities";
+
 import PropertisDetails from "../Pages/PropertisDetails";
 import Properties from "../Pages/Properties";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "../Pages/PrivateRoute";
 import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Blog from "../Pages/Blog";
 
 const Router = createBrowserRouter ([
     {
@@ -20,7 +22,7 @@ const Router = createBrowserRouter ([
         },
         {
             path: '/blog',
-            element : <Facilities></Facilities>
+            element : <Blog></Blog>
         },
         {
             path :'/properties/:id',
@@ -43,6 +45,10 @@ const Router = createBrowserRouter ([
         {
           path: '/about'    ,
           element: <About></About>  
+        }
+        ,{
+            path:'/contact',
+            element:<Contact></Contact>
         }
        ]
     }

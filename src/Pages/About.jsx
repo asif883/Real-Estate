@@ -2,6 +2,7 @@ import Nav from "./Header/Nav";
 import { MdOutlineDone } from "react-icons/md";
 
 
+
 const About = () => {
     return (
         <div>
@@ -35,55 +36,27 @@ const About = () => {
             </div>
 
           </div>
-          {/* 1st part end */}
-           <div className="max-w-7xl mx-auto mt-8">
-             <li className="text-lg text-purple-700">TOP AREA</li>
-             <h2 className="text-4xl font-bold">Find Your Neighborhood</h2>
-            <div className="flex gap-6 mt-8">
-                <div className=" w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/K7PM8My/Best-Places-to-Live-Southern-California.jpg" alt="Shoes" /></figure>
-                    <div className=" flex justify-between items-center">
-                        <div>
-                         <p>5 Property</p>
-                         <h2 className="">California</h2>
-                        </div>
-                        <div>
-                          <p>arrow</p>
-                        </div>
-                    </div>
-                </div>  
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/K7PM8My/Best-Places-to-Live-Southern-California.jpg" alt="Shoes" /></figure>
-                    <div className="card-body">
-                    <p>5 Property</p>
-                        <h2 className="card-title">California</h2>
-                        <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>  
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/K7PM8My/Best-Places-to-Live-Southern-California.jpg" alt="Shoes" /></figure>
-                    <div className="card-body">
-                    <p>5 Property</p>
-                        <h2 className="card-title">California</h2>
-                        <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>  
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://i.ibb.co/K7PM8My/Best-Places-to-Live-Southern-California.jpg" alt="Shoes" /></figure>
-                    <div className="card-body">
-                    <p>5 Property</p>
-                        <h2 className="card-title">California</h2>
-                        <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>  
-             </div>
-           </div>
+          {/* 1st part end */} 
+          <div className="flex gap-10 flex-col lg:flex-row mt-16 max-w-7xl mx-auto">
+            <div>
+                <h1 className="text-4xl font-bold">We Provide You The Best Service <br />
+                 Of Real Estate Industries</h1>
+
+                 <p className="text-gray-500 mt-3">
+
+                 Building when an unknown printer took a galley of type and <br /> scram bled it to make a  type specimen book. It has survived not only five <br /> centuries, but also the leape. <br />
+
+ 
+           <br />
+          
+                    when an unknown printer took a galley of type andetry scram bled <br /> it to make a type specimen bookhas survived not only centuriesalwith <br /> the release of Letraset sheets containing Lorem Ipsum <br /> passages, and more recently
+                 </p>
+            </div>
+            <div>
+               <img src="https://i.ibb.co/pr1p7Zx/home-4-sec-1.jpg" alt="" />
+            </div>
+          </div>
+          
         </div>
     );
 };

@@ -38,10 +38,12 @@ const Register = () => {
 
                 <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
-                            <label className="label">
+                            <label className="label ">
                                 <span className="label-text text-xl font-semibold">Name</span>
                             </label>
-                            <input type="text" placeholder="Enter Your Name"className="input input-bordered border border-purple-600" required />
+                                
+                            <input type="text"  placeholder="Enter Your Name"className="input input-bordered border border-purple-600" required />
+                           
                         </div>
                         <div className="form-control">
                             <label className="label">
