@@ -3,6 +3,7 @@ import Nav from "./Header/Nav";
 import { LuCalendarDays } from "react-icons/lu";
 import { IoMdTime } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 
 const Blog = () => {
@@ -17,6 +18,9 @@ const Blog = () => {
     // console.log(blog)
     return (
         <div>
+          <Helmet>
+                <title>Urban Paradise -Blogs</title>
+            </Helmet>
             <Nav></Nav>
             <div className="max-w-7xl mx-auto mt-10">
             {

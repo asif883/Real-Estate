@@ -1,11 +1,15 @@
 import Nav from "./Header/Nav";
 import { SlPeople } from "react-icons/sl";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 
 
 const Contact = () => {
     return (
         <div>
+            <Helmet>
+                <title>Urban Paradise -Contact</title>
+            </Helmet>
             <Nav></Nav>
             <div className="flex gap-16 flex-col-reverse lg:flex-row mt-10 max-w-7xl mx-auto">
                 <div>

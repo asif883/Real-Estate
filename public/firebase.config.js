@@ -4,13 +4,15 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBOQSWdDObgqTvENzFu2c2QbFP9QGNHW-g",
-  authDomain: "urban-paradise.firebaseapp.com",
-  projectId: "urban-paradise",
-  storageBucket: "urban-paradise.appspot.com",
-  messagingSenderId: "134837840677",
-  appId: "1:134837840677:web:81ab8d306e92719c8b08cc"
+  apiKey:import.meta.env.VITE_APIKEY ,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN ,
+  projectId:import.meta.env.VITE_PROJECTID ,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET ,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID ,
+  appId:import.meta.env.VITE_APPID ,
 };
 
 // Initialize Firebase

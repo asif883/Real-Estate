@@ -8,6 +8,7 @@ import { TbBuildingEstate } from "react-icons/tb";
 import { TbBuildingCommunity } from "react-icons/tb";
 import { TbBuildingCottage } from "react-icons/tb";
 import { MdArrowOutward } from "react-icons/md";
+import { Helmet } from "react-helmet";
 
 
 
@@ -15,6 +16,9 @@ import { MdArrowOutward } from "react-icons/md";
 const Properties = () => {
     return (
         <div>
+            <Helmet>
+                <title>Urban Paradise -property</title>
+            </Helmet>
             <Nav></Nav>
             <div className="bg-purple-50">
                 <div className="max-w-7xl mx-auto mt-10 p-8">

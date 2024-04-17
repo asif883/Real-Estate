@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Nav from "./Header/Nav";
 import { MdOutlineDone } from "react-icons/md";
 
@@ -6,6 +7,9 @@ import { MdOutlineDone } from "react-icons/md";
 const About = () => {
     return (
         <div>
+            <Helmet>
+                <title>Urban Paradise -About</title>
+            </Helmet>
             <Nav></Nav>
             <div className=" bg-purple-50 p-4">
           <div className="flex flex-col-reverse lg:flex-row gap-10 mt-10 max-w-7xl mx-auto">

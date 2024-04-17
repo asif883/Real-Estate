@@ -3,6 +3,7 @@ import Nav from "./Header/Nav";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/Provider";
 import { IoIosEyeOff,IoMdEye  } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 
 
@@ -28,10 +29,12 @@ const Register = () => {
         createUser ( email, password)
         .then(result =>{
             console.log(result.user)
+            alert('Registration Successful')
             setSuccess('Registration success')
         })
         .catch (error =>{
             console.error( error.message)
+            alert(error.message)
             setErrorMassage(error.message)
         })
     }
@@ -40,6 +43,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Urban Paradise -Register</title>
+            </Helmet>
             <Nav></Nav>
             
             <div className="text-center max-w-lg mx-auto mt-8 shadow-xl rounded-lg pb-8">
