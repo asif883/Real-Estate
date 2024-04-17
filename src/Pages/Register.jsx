@@ -9,10 +9,19 @@ import { Helmet } from "react-helmet";
 
 
 const Register = () => {
+
+    const[password, setPassword] =useState('');
+    
+    
+
     const {createUser} =useContext(AuthContext)
     const [errorMassage, setErrorMassage] =useState('')
     const [success,setSuccess] =useState('')
     const [showPassword, setShowPassword] =useState(false)
+
+    const handleChange= (e)=>{
+        setPassword(e.target.value)
+    }
 
     const handleRegister = e=> {
         e.preventDefault();
@@ -21,16 +30,34 @@ const Register = () => {
         const password = form.get('password');
         console.log (email, password);
 
+      
+        const regExp =/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/
+        if(password === ""){
+            setErrorMassage('Please enter Password')
+            
+        } else if(regExp.test(password)){
+            setErrorMassage ('Password is valid')
+            
+        } else if(!regExp.test(password)){
+            setErrorMassage('Password is not valid')
+            return
+        }
+
         setErrorMassage('');
         setSuccess('')
 
+        
+        
         
 
         createUser ( email, password)
         .then(result =>{
             console.log(result.user)
+            
             alert('Registration Successful')
             setSuccess('Registration success')
+
+           
         })
         .catch (error =>{
             console.error( error.message)
@@ -81,6 +108,8 @@ const Register = () => {
                        <input type={showPassword? "text": "password"} 
                             name='password' 
                             placeholder="password" 
+                            onChange={handleChange}
+                            value={password}
                             className= "input input-bordered border border-purple-600" required />
                       
                             <span  className="absolute right-3 bottom-4 text-xl" onClick={()=>setShowPassword(!showPassword)}>
@@ -90,6 +119,7 @@ const Register = () => {
                             </span>
                        
                         </div>
+                        
                         <div className="form-control mt-6">
                         <button className="border-2 border-purple-600 px-6  rounded-lg py-3 bg-purple-500 text-white   font-semibold">Register</button>
                         </div>

@@ -10,11 +10,14 @@ import PrivateRoute from "../Pages/PrivateRoute";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
+import Profile from "../Pages/Profile";
+import ErrorPage from "../Pages/ErrorPage";
 
 const Router = createBrowserRouter ([
     {
        path: '/',
        element:<Root></Root>,
+       errorElement:<ErrorPage></ErrorPage>,
        children: [
         {
             path: '/',
@@ -49,6 +52,10 @@ const Router = createBrowserRouter ([
         ,{
             path:'/contact',
             element:<Contact></Contact>
+        }
+        ,{
+            path:'/profile',
+            element:<PrivateRoute><Profile></Profile></PrivateRoute>
         }
        ]
     }
