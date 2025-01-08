@@ -3,6 +3,7 @@ import { RiHomeHeartLine } from "react-icons/ri";
 import { TbHomeRibbon } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Fade } from "react-awesome-reveal";
 const Speciality = () => {
     return (
         <div className="bg-purple-50">
@@ -11,7 +12,8 @@ const Speciality = () => {
                 <p className="text-purple-800 font-bold">What We do</p>
                 <h1 className="text-4xl font-bold">Our Main Speciality</h1>
             </div>
-            <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 mt-6">
+             <Fade>
+             <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 mt-6">
                 <div className="text-center hover:shadow-xl hover:bg-base-100 p-8 rounded-xl ">
                    <div className="flex justify-center">
                         <div className="bg-purple-100 hover:bg-purple-500 p-2  w-16 h-16 rounded-full text-center ">
@@ -57,6 +59,7 @@ const Speciality = () => {
                     </Link>
                 </div>
             </div>
+             </Fade>
         </div>
         </div>
     );

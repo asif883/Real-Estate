@@ -1,3 +1,4 @@
+import { Slide } from "react-awesome-reveal";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -6,7 +7,8 @@ const Tour = () => {
     return (
         <div className="max-w-7xl mx-auto mt-16">
             <div className="flex flex-col lg:flex-row justify-between">
-            <div>
+              <Slide direction="left">
+              <div>
                 <li className="text-xl font-semibold text-purple-800 uppercase mb-2">Let's take a tour</li>
                  <h1 className="text-4xl font-bold">Helping People to Find <br /> The
                   <br /> Right Property
@@ -41,11 +43,14 @@ const Tour = () => {
                     </div>
                 </div>
                  
-            </div>
-            <div>
+              </div>
+              </Slide>
+             <Slide direction="right">
+             <div>
                <img src="https://i.ibb.co/hBQJcxN/infobox-2-img.jpg" alt="" />
             </div>
-          </div>
+             </Slide>
+            </div>
         </div>
     );
 };

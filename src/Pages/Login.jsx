@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Nav from "./Header/Nav";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
@@ -64,7 +63,7 @@ const Login = () => {
             <Helmet>
                 <title>Urban Paradise -Login</title>
             </Helmet>
-            <Nav></Nav>
+        
             <div className="max-w-md mx-auto mt-10 shadow-xl rounded-lg">
                 <div className="text-center">
                     <h1 className="text-4xl text-purple-800 font-bold">Login Now</h1>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Nav from "./Header/Nav";
+
 import { LuCalendarDays } from "react-icons/lu";
 import { IoMdTime } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
@@ -21,8 +21,8 @@ const Blog = () => {
           <Helmet>
                 <title>Urban Paradise -Blogs</title>
             </Helmet>
-            <Nav></Nav>
-            <div className="max-w-7xl mx-auto mt-10">
+      
+            <div className="max-w-7xl mx-auto mt-10 p-5">
             {
                 blogs.map((blog, idx)=> <div className="mt-12 pb-3 border-purple-300 border-b-2 border-dashed" key={idx}>
                   <div>

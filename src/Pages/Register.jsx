@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Nav from "./Header/Nav";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/Provider";
 import { IoIosEyeOff,IoMdEye  } from "react-icons/io";
@@ -73,7 +72,7 @@ const Register = () => {
             <Helmet>
                 <title>Urban Paradise -Register</title>
             </Helmet>
-            <Nav></Nav>
+      
             
             <div className="text-center max-w-lg mx-auto mt-8 shadow-xl rounded-lg pb-8">
                 <h1 className="text-4xl text-purple-800 font-bold">Register Now</h1>

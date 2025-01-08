@@ -1,4 +1,4 @@
-import Nav from "./Header/Nav";
+
 import {  useLoaderData, useParams } from "react-router-dom";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosTimer } from "react-icons/io";
@@ -32,10 +32,9 @@ const PropertisDetails = () => {
     const {facilities,estate_title,publish_date,view,location,image_url,author_name,phone,email,price,status,bedrooms,bathrooms ,area,segment_name,amenities,description,image1,image2,image3} =oneEstate;
     return (
         <div className="max-w-7xl mx-auto ">
-            <Nav></Nav>
             <div className="mt-10 "> 
                 <div>
-                  <div className="flex justify-between">
+                  <div className="flex gap-2 flex-col md:flex-row justify-between">
                    <h1 className="text-3xl font-bold">{estate_title}</h1>
                    <div>
                      <h2 className="text-2xl font-bold">Price: {price}(Fixed)</h2>
@@ -51,7 +50,7 @@ const PropertisDetails = () => {
                   </div>
                 </div>
                  
-                <div className="grid gap-6 grid-cols-3 mt-6">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-3 mt-6">
                     <div className="col-span-2 ">
                       <div className="carousel w-full rounded-lg h-[550px]">
                         <div id="slide1" className="carousel-item relative w-full">
@@ -126,10 +125,10 @@ const PropertisDetails = () => {
                     </div>
                 </div>
 
-                <div className="grid gap-6 grid-cols-3">
-                    <div className=" col-span-2 border-2 h-[600px] border-purple-200 rounded-lg p-4 mt-8">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-3">
+                    <div className=" col-span-2 border-2 border-purple-200 rounded-lg p-4 mt-8">
                             <h1 className="text-3xl font-bold">Overview</h1>
-                                <div className="flex gap-2 justify-between mt-4">
+                                <div className="grid grid-cols-4 gap-2 mt-4">
                                         <p className="font-semibold flex items-center gap-1 text-lg border-2 p-2 border-purple-200 rounded-lg"> < IoBedOutline className="" />Beds:{bedrooms}</p>
                                         <p className=" font-semibold flex items-center gap-1 text-lg border-2 p-2 border-purple-200 rounded-lg"> <FaShower />Baths: {bathrooms}</p>
                                         <p className="font-semibold flex items-center gap-1 text-lg border-2 p-2 border-purple-200 rounded-lg"> <BsArrowsFullscreen /> {area} </p>

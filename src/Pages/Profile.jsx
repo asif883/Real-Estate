@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import Nav from "./Header/Nav";
 import { AuthContext } from "../Provider/Provider";
 
 
@@ -7,7 +6,6 @@ const Profile = () => {
     const {user} =useContext(AuthContext)
     return (
         <div>
-            <Nav></Nav>
             <div className="max-w-4xl mx-auto">
             <div className=" p-8 bg-purple-50 rounded-lg mt-6">
                     <div className="flex justify-around flex-col lg:flex-row-reverse">
